@@ -1,10 +1,11 @@
+import logging_setup as _
+import logging
 import pygame as pg
+
 from tilemap import TileMap, Tile
 from player import Player
 from camera import Camera
 from generator import generate_world
-
-vec2 = pg.math.Vector2
 
 FPS: int = 60
 PIXEL_SIZE: int = 4
@@ -81,3 +82,5 @@ if __name__ == "__main__":
 
 	pg.font.quit()
 	pg.quit()
+
+logging.info("Session ended".center(50, "="))

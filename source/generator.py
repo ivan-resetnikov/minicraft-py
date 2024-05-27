@@ -15,6 +15,9 @@ TILE_SPRITES: dict[str, Tile] = {
 
 
 def generate_world(tilemap: TileMap) -> None:
+	""" Generated a new world """
+
+	# TODO: Make an actual world generator
 	for y in range(32):
 		for x in range(32):
 			tilemap.set_tile(Tile(

@@ -4,9 +4,9 @@ Minicraft remake in Python & Pygame
 ![Screenshot from the original game](https://playminicraft.com/img/minicraft_plus_screenshot_1.png)
 
 # ❤️ Support
-Support is *very* much appreciated, this project is fueled strictly by my motivation and by landing me a hand, you can propell the developement onf the project drastically.
+Support is **very** much appreciated, this project is fueled strictly by my motivation and by landing me a hand, you can propell the developement of this project drastically.
 
-Look to the left, there you'll see some links pointong to the websites you'll need.
+*Hint: Scroll up and look to the left, there you'll see some links pointong to the websites you'll need.*
 
 # 🤔 FAQ
 Q: Did you mean to say "Minecraft"?

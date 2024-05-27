@@ -1,13 +1,15 @@
-from camera import Camera
 import pygame as pg
+import logging
 import math
 
-TILE_SIZE: int = 16
-CHUNK_SIZE: int = 16
+from camera import Camera
 
 vec2 = pg.math.Vector2
 x = 0
 y = 1
+
+TILE_SIZE: int = 16
+CHUNK_SIZE: int = 16
 
 
 class Tile:

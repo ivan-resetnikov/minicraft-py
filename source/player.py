@@ -1,4 +1,6 @@
 import pygame as pg
+import logging
+
 from resource_loader import multi_load_from_spritesheet, AlphaMode
 from camera import Camera
 
@@ -8,7 +10,7 @@ vec2 = pg.math.Vector2
 
 class Player:
 	def __init__(self):
-		self.sprites = multi_load_from_spritesheet("./resources/sprites/entities.png", (
+		self.sprites = multi_load_from_spritesheet("./resources/sprites/player.png", (
 				pg.Rect(0, 0, 16, 16),
 				pg.Rect(16, 0, 16, 16),
 				pg.Rect(32, 0, 16, 16),
@@ -31,6 +33,7 @@ class Player:
 			(float(pressed_keys[pg.K_d]) - float(pressed_keys[pg.K_a])),
 			(float(pressed_keys[pg.K_s]) - float(pressed_keys[pg.K_w])))
 		
+		# Because normalizization of a vector can't be done when both values are 0.
 		if self.input_vector:
 			input_vector_norm: vec2 = self.input_vector.normalize()
 		else:
