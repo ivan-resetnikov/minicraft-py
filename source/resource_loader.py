@@ -57,7 +57,7 @@ def multi_load_from_spritesheet(spritesheet_path: str, rects: list[pg.Rect]|tupl
 
 
 def load_sprites() -> None:
-	""" Called when the display is initialized, it loads all the sprites in the game. """
+	""" Called ONCE after the display is initialized, it loads all the sprites in the game. """
 
 	global SPRITES
 
@@ -84,11 +84,16 @@ def load_sprites() -> None:
 			sprites: list = []
 			sprite_count_x: int = math.floor(image.get_width() / metadata["grid_w"])
 			sprite_count_y: int = math.floor(image.get_height() / metadata["grid_h"])
-			for x in range(sprite_count_x):
-				for y in range(sprite_count_y):
-					pass
+			for y in range(sprite_count_y):
+				for x in range(sprite_count_x):
+					sprite = image.subsurface((
+						x * metadata["grid_w"], y * metadata["grid_h"], metadata["grid_w"], metadata["grid_h"]))
+
+					match metadata["alpha_mode"]:
+						case "NONE": sprite = sprite.convert()
+						case "KEY": sprite = sprite.convert(); sprite.set_colorkey(KEY_COLOR)
+						case "FULL": sprite = sprite.convert_alpha()
+
+					sprites.append(sprite)
 
 			SPRITES[filename[:-4]] = tuple(sprites)
-
-
-load_sprites()

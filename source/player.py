@@ -1,7 +1,7 @@
 import pygame as pg
 import logging
 
-from resource_loader import multi_load_from_spritesheet, AlphaMode
+from resource_loader import SPRITES, AlphaMode
 from camera import Camera
 
 vec2 = pg.math.Vector2
@@ -10,12 +10,7 @@ vec2 = pg.math.Vector2
 
 class Player:
 	def __init__(self):
-		self.sprites = multi_load_from_spritesheet("./resources/sprites/player.png", (
-				pg.Rect(0, 0, 16, 16),
-				pg.Rect(16, 0, 16, 16),
-				pg.Rect(32, 0, 16, 16),
-				pg.Rect(48, 0, 16, 16),
-			), AlphaMode.KEY)
+		self.sprites = SPRITES["player"]
 
 		self.pos = vec2(0, 0)
 		self.vel = vec2(0, 0)

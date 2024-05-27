@@ -14,3 +14,61 @@ DEBUG:root: * alpha_mode: 1
 DEBUG:root:Created new camera instance
 DEBUG:root:Setting camera target to <player.Player object at 0x00000234FF842ED0>
 INFO:root:==================Session ended===================
+INFO:root:=================Session started==================
+INFO:root:Session date: 2024-05-27 13:01:33.991221
+INFO:root:Minicaraft version-0.0.1 build-55fdc80fe9a74ca65af2c9e7b1fe9d981b3b3420
+DEBUG:root:Loading all sprites
+DEBUG:root:Loading from ./resources/sprites
+DEBUG:root: * player.png
+DEBUG:root: * tileset.png
+DEBUG:root: * unused.png
+DEBUG:root: * zombie.png
+DEBUG:root:Multi-loading from spritesheet
+DEBUG:root: * spritesheet_path: ./resources/sprites/player.png
+DEBUG:root: * rects: (Rect(0, 0, 16, 16), Rect(16, 0, 16, 16), Rect(32, 0, 16, 16), Rect(48, 0, 16, 16))
+DEBUG:root: * alpha_mode: 1
+DEBUG:root:Created new camera instance
+DEBUG:root:Setting camera target to <player.Player object at 0x000001C851A12CC0>
+INFO:root:==================Session ended===================
+INFO:root:=================Session started==================
+INFO:root:Session date: 2024-05-27 13:04:52.646903
+INFO:root:Minicaraft version-0.0.1 build-55fdc80fe9a74ca65af2c9e7b1fe9d981b3b3420
+DEBUG:root:Loading all sprites
+DEBUG:root:Loading from ./resources/sprites
+DEBUG:root: * player.png
+DEBUG:root: * tileset.png
+DEBUG:root: * unused.png
+DEBUG:root: * zombie.png
+DEBUG:root:Created new camera instance
+DEBUG:root:Setting camera target to <player.Player object at 0x0000016B62066EA0>
+INFO:root:==================Session ended===================
+INFO:root:=================Session started==================
+INFO:root:Session date: 2024-05-27 13:05:19.140263
+INFO:root:Minicaraft version-0.0.1 build-55fdc80fe9a74ca65af2c9e7b1fe9d981b3b3420
+DEBUG:root:Loading all sprites
+DEBUG:root:Loading from ./resources/sprites
+DEBUG:root: * player.png
+DEBUG:root: * tileset.png
+DEBUG:root: * unused.png
+DEBUG:root: * zombie.png
+DEBUG:root:Created new camera instance
+DEBUG:root:Setting camera target to <player.Player object at 0x0000026D31E02EA0>
+INFO:root:==================Session ended===================
+INFO:root:=================Session started==================
+INFO:root:Session date: 2024-05-27 13:06:54.958925
+INFO:root:Minicaraft version-0.0.1 build-55fdc80fe9a74ca65af2c9e7b1fe9d981b3b3420
+DEBUG:root:Loading all sprites
+DEBUG:root:Loading from ./resources/sprites
+DEBUG:root: * player.png
+INFO:root:=================Session started==================
+INFO:root:Session date: 2024-05-27 13:07:41.181122
+INFO:root:Minicaraft version-0.0.1 build-55fdc80fe9a74ca65af2c9e7b1fe9d981b3b3420
+DEBUG:root:Loading all sprites
+DEBUG:root:Loading from ./resources/sprites
+DEBUG:root: * player.png
+DEBUG:root: * tileset.png
+DEBUG:root: * unused.png
+DEBUG:root: * zombie.png
+DEBUG:root:Created new camera instance
+DEBUG:root:Setting camera target to <player.Player object at 0x00000215E5C511C0>
+INFO:root:==================Session ended===================

@@ -6,6 +6,7 @@ from tilemap import TileMap, Tile
 from player import Player
 from camera import Camera
 from generator import generate_world
+from resource_loader import load_sprites
 
 FPS: int = 60
 PIXEL_SIZE: int = 4
@@ -23,6 +24,8 @@ class Game:
 		self.clock = pg.time.Clock()
 
 		pg.display.set_caption("Minicraft")
+
+		load_sprites()
 
 	def run(self) -> None:
 		self.init()
@@ -50,7 +53,7 @@ class Game:
 		self.tilemap = TileMap()
 		self.player = Player()
 		self.camera = Camera((RENDER_WIDTH, RENDER_HEIGHT))
-		self.camera.set_target(self.player, (8, 8))
+		self.camera.set_target(self.player, (16, 16))
 
 		generate_world(self.tilemap)
 
