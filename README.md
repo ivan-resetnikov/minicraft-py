@@ -13,13 +13,19 @@ Q: Did you mean to say "Minecraft"?
 
 A: No, "Minicraft" is an acutal game developed by Markus Persson for a 48-hour game programming contest Ludum Dare 22 on December 19th, 2011. [Wikipedia page](https://en.wikipedia.org/wiki/Minicraft).
 
+---
+
 Q: Is it ready yet?
 
 A: The developement has started on May 26th, 2024. And is still in active developement.
 
+---
+
 Q: Where can I see the developement progress?
 
 A: I frequenty (almost every day) post update/dev blogs on r/pygame subreddit. Click this [link](https://www.reddit.com/r/pygame/search/?q=author%3AIvan-Resetnikov+title%3AMinicraft&type=link&cId=990fad03-0dc5-4dba-974b-1d09dbbea985&iId=408c736d-aeae-4a70-af29-bc07677eae3a) to find all the devblogs.
+
+...Or take a look at the TODO.md file, it containers everythin I had already done, and what I will be doing in the near future. But keep in mind that it is more technical
 
 # 🪪 License
 **The MIT License (MIT)** - copy of the license of this project, is provided in the "LICENSE.txt" file.

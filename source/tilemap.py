@@ -13,12 +13,16 @@ CHUNK_SIZE: int = 16
 
 
 class Tile:
+	""" Tile data container, part of the tilemap system """
+
 	def __init__(self, sprite: pg.Surface, pos: tuple[int, int]) -> None:
 		self.sprite = sprite
 		self.pos = pos
 
 
 class Chunk:
+	""" Chunk interface, part of the tilemap system """
+
 	def __init__(self, pos: tuple[int, int]) -> None:
 		self.pos: tuple[int, int] = pos
 		
@@ -28,7 +32,10 @@ class Chunk:
 
 
 	def add_tile(self, tile: Tile, rel_pos: tuple[int, int]) -> None:
+		""" Sets a tile  """
 		self.surface.blit(tile.sprite, (rel_pos[x] * TILE_SIZE, rel_pos[y] * TILE_SIZE))
+
+		# TODO: Store tile in the self.tiles property
 
 
 	def draw(self, render_target: pg.Surface, camera: Camera) -> None:
@@ -36,6 +43,8 @@ class Chunk:
 
 
 class TileMap:
+	""" Tilemap system interaface """
+
 	def __init__(self) -> None:
 		self.chunks: dict[Chunk] = {}
 

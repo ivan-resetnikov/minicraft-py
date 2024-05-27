@@ -18,6 +18,8 @@ class Player:
 		self.speed = 0.5
 		self.input_vector: vec2 = vec2()
 
+		logging.debug("Created the player instance")
+
 	def ready(self) -> None:
 		pass
 

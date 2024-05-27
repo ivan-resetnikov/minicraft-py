@@ -1,0 +1,2 @@
+- [x] Logging system
+- [x] Store tile in the self.tiles property (at tilemap.py)
