@@ -2,8 +2,8 @@ from camera import Camera
 import pygame as pg
 import math
 
-TILE_SIZE: int = 8
-CHUNK_SIZE: int = 8
+TILE_SIZE: int = 16
+CHUNK_SIZE: int = 16
 
 vec2 = pg.math.Vector2
 x = 0

@@ -2,6 +2,7 @@ import pygame as pg
 from tilemap import TileMap, Tile
 from player import Player
 from camera import Camera
+from generator import generate_world
 
 vec2 = pg.math.Vector2
 
@@ -43,16 +44,14 @@ class Game:
 		self.quit()
 
 	def init(self) -> None:
-		self.font = pg.font.Font("./resources/pico-8.ttf", 4)
+		self.font = pg.font.Font("./resources/fonts/pico-8.ttf", 4)
 
 		self.tilemap = TileMap()
 		self.player = Player()
 		self.camera = Camera((RENDER_WIDTH, RENDER_HEIGHT))
 		self.camera.set_target(self.player, (8, 8))
 
-		for y in range(32):
-			for x in range(32):
-				self.tilemap.set_tile(Tile(pg.image.load("./resources/test.png"), (x, y)))
+		generate_world(self.tilemap)
 
 	def update(self) -> None:
 		self.player.update()
@@ -65,7 +64,8 @@ class Game:
 		self.render_texture.blit(self.font.render(
 				text=str(int(self.clock.get_fps())) + " FPS",
 				antialias=False,
-				color=(255, 255, 0)),
+				color=(255, 255, 0),
+				bgcolor=(0, 0, 0)),
 			dest=(1, 1))
 
 	def quit(self) -> None:
