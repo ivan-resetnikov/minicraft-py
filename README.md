@@ -17,7 +17,7 @@ A: No, "Minicraft" is an acutal game developed by Markus Persson for a 48-hour g
 
 Q: Is it ready yet?
 
-A: The developement has started on May 26th, 2024. And is still in active developement.
+A: The developement has started on May 26th, 2024. **This project was deprecated on Sep 1st, 2025.**
 
 ---
 
@@ -28,4 +28,5 @@ A: I frequenty (almost every day) post update/dev blogs on r/pygame subreddit. C
 ...Or take a look at the TODO.md file, it containers everythin I had already done, and what I will be doing in the near future. But keep in mind that it is more technical
 
 # 🪪 License
+
 **The MIT License (MIT)** - copy of the license of this project, is provided in the "LICENSE.txt" file.
